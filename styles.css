@@ -415,6 +415,7 @@ h1 {
 
 .champions-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
 }
 
 .champion-card {
@@ -424,15 +425,12 @@ h1 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
 }
 
 .champion-card img {
   display: block;
   width: 100%;
-  height: clamp(220px, 30vw, 320px);
-  object-fit: contain;
-  object-position: center;
+  height: auto;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent),
     #0a0a0a;
@@ -458,7 +456,7 @@ h1 {
 }
 
 .champion-card-wide img {
-  height: clamp(240px, 34vw, 420px);
+  height: auto;
 }
 
 .timeline-band {
@@ -580,7 +578,7 @@ body.alt-theme .upload-button {
   }
 
   .champion-card-wide img {
-    aspect-ratio: 4 / 3;
+    height: auto;
   }
 }
 
@@ -623,6 +621,6 @@ body.alt-theme .upload-button {
 
   .champion-card img,
   .champion-card-wide img {
-    height: clamp(200px, 58vw, 300px);
+    height: auto;
   }
 }
