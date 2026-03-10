@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sir Lewis Hamilton | Tribute Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="utility-bar">
+      <p>Sir Lewis Hamilton Tribute</p>
+      <p>Unofficial Fan Page</p>
+      <p>Inspired by Mercedes-AMG F1 design cues</p>
+    </header>
+
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <div class="brand">LH</div>
+        <div class="nav-links">
+          <a href="#work">Career</a>
+          <a href="#contact">Gallery</a>
+          <button class="mode-toggle" id="modeToggle" type="button" aria-label="Switch color theme">
+            Shift Mood
+          </button>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <section class="hero-copy">
+          <p class="eyebrow">Speed. Precision. Legacy.</p>
+          <h1>Sir Lewis Hamilton built a modern Formula 1 legend.</h1>
+          <p class="intro">
+            A high-contrast tribute page shaped by race-week energy, championship pedigree,
+            and the polished aggression of modern motorsport design.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore Legacy</a>
+            <a class="button button-secondary" href="#contact">Open Gallery</a>
+          </div>
+
+          <ul class="stat-row">
+            <li>
+              <span class="stat-value">7</span>
+              <span class="stat-label">world championships won</span>
+            </li>
+            <li>
+              <span class="stat-value">100+</span>
+              <span class="stat-label">Formula 1 victories</span>
+            </li>
+            <li>
+              <span class="stat-value">180+</span>
+              <span class="stat-label">podium finishes and counting</span>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="hero-card">
+          <div class="card-badge">Driver Image</div>
+          <div class="photo-frame">
+            <img
+              id="profilePreview"
+              src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80"
+              alt="Preview area for a Lewis Hamilton photo"
+            >
+          </div>
+          <label class="upload-button" for="photoInput">Add Your Picture</label>
+          <input class="photo-input" id="photoInput" type="file" accept="image/*">
+          <h2>Race-day intensity, editorial polish, and unmistakable presence.</h2>
+          <p>
+            Use the upload button to swap in your own Lewis Hamilton image. The preview updates
+            instantly in the browser without any frameworks or backend.
+          </p>
+          <div class="signal-list">
+            <span>Champion</span>
+            <span>Fashion</span>
+            <span>Activism</span>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="headline-strip" aria-label="Highlight headlines">
+        <article class="headline-card headline-main">
+          <p class="feature-label">Featured Story</p>
+          <h3>The standard for excellence over an entire generation.</h3>
+        </article>
+        <article class="headline-card">
+          <p class="feature-label">Style Note</p>
+          <h3>Clean black surfaces with teal race-tech highlights.</h3>
+        </article>
+        <article class="headline-card">
+          <p class="feature-label">Fan Mode</p>
+          <h3>Upload a new image and make the page your own.</h3>
+        </article>
+      </section>
+
+      <section class="feature-strip" aria-label="Core values">
+        <article>
+          <p class="feature-label">Record</p>
+          <h3>Elite pace across eras, teams, and regulations.</h3>
+        </article>
+        <article>
+          <p class="feature-label">Presence</p>
+          <h3>Fearless personal style with unmistakable confidence.</h3>
+        </article>
+        <article>
+          <p class="feature-label">Impact</p>
+          <h3>Using the platform to push for change beyond racing.</h3>
+        </article>
+      </section>
+
+      <section class="work-section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Career Highlights</p>
+          <h2>Moments that built the legend.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-type">Breakthrough</p>
+            <h3>Rookie Arrival</h3>
+            <p>Exploded into Formula 1 with instant pace, pressure handling, and title-level results.</p>
+          </article>
+          <article class="project-card">
+            <p class="project-type">Dominance</p>
+            <h3>Championship Era</h3>
+            <p>Defined a generation with relentless consistency, race craft, and qualifying speed.</p>
+          </article>
+          <article class="project-card">
+            <p class="project-type">Influence</p>
+            <h3>Beyond Motorsport</h3>
+            <p>Brought visibility to fashion, diversity, and activism while staying at the sharp end.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="timeline-band">
+        <div class="timeline-copy">
+          <p class="eyebrow">Era View</p>
+          <h2>Championship focus, lap after lap.</h2>
+        </div>
+        <div class="timeline-marks">
+          <span>Rookie Rise</span>
+          <span>Title Years</span>
+          <span>Global Icon</span>
+          <span>Still Evolving</span>
+        </div>
+      </section>
+
+      <section class="quote-band">
+        <p>Fast enough to win. Bold enough to matter outside the helmet too.</p>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Make this page yours with your favorite Hamilton shot.</h2>
+        </div>
+        <a class="contact-link" href="#top">Scroll back to the photo upload</a>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
