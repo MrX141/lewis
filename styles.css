@@ -339,7 +339,8 @@ h1 {
 
 .headline-strip,
 .feature-strip,
-.project-grid {
+.project-grid,
+.champions-grid {
   display: grid;
   gap: 1rem;
   margin-top: 1rem;
@@ -402,6 +403,53 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.champions-section {
+  padding: 1rem 0 2rem;
+}
+
+.champions-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.champion-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent), var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.champion-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+
+.champion-copy {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.champion-copy h3 {
+  margin-top: 0.45rem;
+  font-size: 1.35rem;
+}
+
+.champion-copy p:last-child {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.champion-card-wide {
+  grid-column: span 3;
+}
+
+.champion-card-wide img {
+  aspect-ratio: 21 / 8;
 }
 
 .timeline-band {
@@ -482,6 +530,7 @@ body.alt-theme .hero-card,
 body.alt-theme .headline-card,
 body.alt-theme .feature-strip article,
 body.alt-theme .project-card,
+body.alt-theme .champion-card,
 body.alt-theme .timeline-band,
 body.alt-theme .contact-section,
 body.alt-theme .quote-band,
@@ -513,8 +562,17 @@ body.alt-theme .upload-button {
   .headline-strip,
   .feature-strip,
   .project-grid,
+  .champions-grid,
   .timeline-band {
     grid-template-columns: 1fr;
+  }
+
+  .champion-card-wide {
+    grid-column: auto;
+  }
+
+  .champion-card-wide img {
+    aspect-ratio: 4 / 3;
   }
 }
 
@@ -539,6 +597,7 @@ body.alt-theme .upload-button {
   .headline-card,
   .feature-strip article,
   .project-card,
+  .champion-card,
   .timeline-band,
   .quote-band,
   .contact-section {
